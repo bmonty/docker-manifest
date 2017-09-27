@@ -5,6 +5,7 @@
   "main": "docker-manifest.js",
   "author": "Benjamin Montgomery <bmontgom@montynet.org>",
   "license": "MIT",
+  "repository": "bmonty/docker-manifest",
   "dependencies": {
     "axios": "^0.16.2",
     "docker-parse-image": "^3.0.1",
