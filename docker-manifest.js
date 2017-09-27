@@ -76,7 +76,7 @@ function getManifest(options) {
       if (options.nonSecure) {
         repoPromise = nonSecureRequest(options.repository.url, repoOptions);
       } else {
-        repoPromise.get(options.repository.url, repoOptions);
+        repoPromise = axios.get(options.repository.url, repoOptions);
       }
 
       return repoPromise
