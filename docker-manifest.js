@@ -105,11 +105,11 @@ function getImageManifest(image, username = null, password = null, nonSecure = f
           url: authInfo.realm,
           params: {
             service: authInfo.service,
-            scope: `repository:${parsedImage.namespace ? `${parsedImage.namespace}/` : ''}${parsedImage.repository}:pull`,
+            scope: `repository:${parsedImage.namespace ? `${parsedImage.namespace}/` : 'library/'}${parsedImage.repository}:pull`,
           },
         },
         repository: {
-          url: `${repoUrl}${parsedImage.namespace ? `${parsedImage.namespace}/` : ''}${parsedImage.repository}/manifests/${parsedImage.tag ? parsedImage.tag : 'latest'}`,
+          url: `${repoUrl}${parsedImage.namespace ? `${parsedImage.namespace}/` : 'library/'}${parsedImage.repository}/manifests/${parsedImage.tag ? parsedImage.tag : 'latest'}`,
         },
         nonSecure,
       };
