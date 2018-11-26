@@ -1,6 +1,6 @@
 {
   "name": "docker-manifest",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Get manifest info for a docker image.",
   "main": "docker-manifest.js",
   "author": "Benjamin Montgomery <bmontgom@montynet.org>",
