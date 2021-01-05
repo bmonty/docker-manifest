@@ -7,7 +7,7 @@ $ npm install docker-manifest
 ## Usage
 
 ```js
-const const dockerManifest = require('docker-manifest');
+const dockerManifest = require('docker-manifest');
 
 dockerManifest.getImageManifest('library/alpine').then((manifest) => {
   console.log(manifest);
